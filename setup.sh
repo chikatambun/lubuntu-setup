@@ -1,12 +1,3 @@
-sudo apt-get install aptitude
-sudo aptitude update
-sudo aptitude safe-upgrade
-
-# install "Additinal drivers" with Lubuntu Software Center
-# Can I do this with CLI?
-
-sudo aptitude install zsh vim curl git
-
 # ref.
 #  http://kaiyanotako.blogspot.jp/2012/07/lubuntu-1204-mozc.html
 #  http://ysnmdm.air-nifty.com/blog/2012/10/lubuntumozc-1e1.html
