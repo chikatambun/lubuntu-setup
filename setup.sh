@@ -14,7 +14,3 @@ sudo aptitude install ibus-mozc python-appindicator ibus-gtk ibus-gtk3
 
 # ref. http://ubuntuforums.org/showthread.php?t=1969564
 sudo aptitude install pavucontrol pulseaudio
-
-# collaboration Vim and clipboard
-# ref. http://mba-hack.blogspot.jp/2013/02/clipboard.html
-sudo aptitude install vim-gtk
