@@ -1,0 +1,47 @@
+CONFIG_FILE=$HOME/.config/openbox/lubuntu-rc.xml
+
+# Backup
+cp \
+  $HOME/.config/openbox/lubuntu-rc.xml \
+  $HOME/.config/openbox/lubuntu-rc.xml.orig.`date +%Y%m%d%H%M%S`
+
+# Enable Alt+F2 or Win+R to launch the launcher
+sed 's|<command>lxsession-default launcher_manager</command>|<command>lxpanelctl run</command>|' -i $HOME/.config/openbox/lubuntu-rc.xml
+sed 's|<command>lxsession-default launcher_manager</command>|<command>lxpanelctl run</command>|' -i $HOME/.config/openbox/lubuntu-rc.xml
+
+# Alternative launcher key binding
+# ref.
+#   How to research "Henkan_Mode" name; http://openbox.org/wiki/Help:Bindings
+  ...
+  <keyboard>
+  ...
++   <!-- Alternative Launcher -->
++   <keybind key="Henkan_Mode">
++     <action name="Execute">
++       <command>lxpanelctl run</command>
++     </action>
++   </keybind>
+  ...
+  </keyboard>
+  ...
+
+# Alternative screenshot key binding
+# Win+S instead of PrintScreen
+# Alt+Win+S instead of Alt+PrintScreen
+  ...
+  <keyboard>
+  ...
++   <!-- Alternative Screenshot -->
++   <keybind key="A-W-s">
++     <action name="Execute">
++       <command>lxsession-default screenshot window</command>
++     </action>
++   </keybind>
++   <keybind key="W-s">
++     <action name="Execute">
++       <command>lxsession-default screenshot</command>
++     </action>
++   </keybind>
+  ...
+  </keyboard>
+  ...
