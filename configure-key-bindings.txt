@@ -11,12 +11,12 @@ sed 's|<command>lxsession-default launcher_manager</command>|<command>lxpanelctl
 
 # Alternative launcher key binding
 # ref.
-#   How to research "Henkan_Mode" name; http://openbox.org/wiki/Help:Bindings
+#   How to research "Hiragana_Katakana" name; http://openbox.org/wiki/Help:Bindings
   ...
   <keyboard>
   ...
 +   <!-- Alternative Launcher -->
-+   <keybind key="Henkan_Mode">
++   <keybind key="Hiragana_Katakana">
 +     <action name="Execute">
 +       <command>lxpanelctl run</command>
 +     </action>
