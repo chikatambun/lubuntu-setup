@@ -1,4 +1,9 @@
 sudo aptitude install gnome-terminal
+cat <<EOF | sudo tee /usr/local/bin/gterm
+#!/bin/bash
+gnome-terminal --maximize
+EOF
+sudo chmod +x /usr/local/bin/gterm
 
 # ref.
 #  http://kaiyanotako.blogspot.jp/2012/07/lubuntu-1204-mozc.html
