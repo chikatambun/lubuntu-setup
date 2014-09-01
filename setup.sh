@@ -12,3 +12,10 @@ sudo aptitude install ibus-mozc python-appindicator ibus-gtk ibus-gtk3
 
 # ref. http://ubuntuforums.org/showthread.php?t=1969564
 sudo aptitude install pavucontrol pulseaudio
+
+# ref.
+#   https://forums.ubuntulinux.jp/viewtopic.php?pid=77490#p77490
+#   https://wiki.archlinux.org/index.php/Xcompmgr_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29
+sudo aptitude install xcompmgr
+# Launch
+#/usr/bin/xcompmgr
