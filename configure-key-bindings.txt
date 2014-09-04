@@ -12,36 +12,70 @@ sed 's|<command>lxsession-default launcher_manager</command>|<command>lxpanelctl
 # Alternative launcher key binding
 # ref.
 #   How to research "Hiragana_Katakana" name; http://openbox.org/wiki/Help:Bindings
+  <openbox_config ...>
+    ...
+    <keyboard>
+      ...
++     <!-- Alternative Launcher -->
++     <keybind key="Hiragana_Katakana">
++       <action name="Execute">
++         <command>lxpanelctl run</command>
++       </action>
++     </keybind>
+    ...
+    </keyboard>
   ...
-  <keyboard>
-  ...
-+   <!-- Alternative Launcher -->
-+   <keybind key="Hiragana_Katakana">
-+     <action name="Execute">
-+       <command>lxpanelctl run</command>
-+     </action>
-+   </keybind>
-  ...
-  </keyboard>
-  ...
+  </openbox_config>
 
 # Alternative screenshot key binding
 # Win+S instead of PrintScreen
 # Alt+Win+S instead of Alt+PrintScreen
-  ...
-  <keyboard>
-  ...
-+   <!-- Alternative Screenshot -->
-+   <keybind key="A-W-s">
-+     <action name="Execute">
-+       <command>lxsession-default screenshot window</command>
-+     </action>
-+   </keybind>
-+   <keybind key="W-s">
-+     <action name="Execute">
-+       <command>lxsession-default screenshot</command>
-+     </action>
-+   </keybind>
-  ...
-  </keyboard>
-  ...
+  <openbox_config ...>
+    ...
+    <keyboard>
+    ...
++     <!-- Alternative Screenshot -->
++     <keybind key="A-W-s">
++       <action name="Execute">
++         <command>lxsession-default screenshot window</command>
++       </action>
++     </keybind>
++     <keybind key="W-s">
++       <action name="Execute">
++         <command>lxsession-default screenshot</command>
++       </action>
++     </keybind>
+    ...
+    </keyboard>
+    ...
+  </openbox_config>
+
+# Alt+J and Alt+K to switch window
+  <openbox_config ...>
+    ...
+    <keyboard>
+    ...
++     <keybind key="A-j">
++       <action name="NextWindow">
++         <dialog>icons</dialog>
++         <finalactions>
++           <action name="Focus"/>
++           <action name="Raise"/>
++           <action name="Unshade"/>
++         </finalactions>
++       </action>
++     </keybind>
++     <keybind key="A-k">
++       <action name="PreviousWindow">
++         <dialog>icons</dialog>
++         <finalactions>
++           <action name="Focus"/>
++           <action name="Raise"/>
++           <action name="Unshade"/>
++         </finalactions>
++       </action>
++     </keybind>
+    ...
+    <keyboard>
+    ...
+  </openbox_config>
