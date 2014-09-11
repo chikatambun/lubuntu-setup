@@ -17,5 +17,4 @@ sudo aptitude install pavucontrol pulseaudio
 #   https://forums.ubuntulinux.jp/viewtopic.php?pid=77490#p77490
 #   https://wiki.archlinux.org/index.php/Xcompmgr_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29
 sudo aptitude install xcompmgr
-# Launch
-#/usr/bin/xcompmgr
+echo xcompmgr >> $HOME/.config/lxsession/Lubuntu/autostart
