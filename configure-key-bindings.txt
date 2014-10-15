@@ -79,3 +79,27 @@ sed 's|<command>lxsession-default launcher_manager</command>|<command>lxpanelctl
     <keyboard>
     ...
   </openbox_config>
+
+# Win+H and Win+L to switch desktop
+  <openbox_config>
+    ...
+    <keyboard>
+      ...
++     <!-- Alternative Desktop switching to left/right -->
++     <keybind key="W-h">
++       <action name="GoToDesktop">
++         <to>left</to>
++         <wrap>no</wrap>
++       </action>
++     </keybind>
++     <keybind key="W-l">
++       <action name="GoToDesktop">
++         <to>right</to>
++         <wrap>no</wrap>
++       </action>
++     </keybind>
++     <!-- Alternative Desktop switching to left/right END -->
+      ...
+    </keyboard>
+    ...
+  </openbox_config>
