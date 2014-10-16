@@ -89,13 +89,13 @@ sed 's|<command>lxsession-default launcher_manager</command>|<command>lxpanelctl
 +     <keybind key="W-h">
 +       <action name="GoToDesktop">
 +         <to>left</to>
-+         <wrap>no</wrap>
++         <wrap>yes</wrap>
 +       </action>
 +     </keybind>
 +     <keybind key="W-l">
 +       <action name="GoToDesktop">
 +         <to>right</to>
-+         <wrap>no</wrap>
++         <wrap>yes</wrap>
 +       </action>
 +     </keybind>
 +     <!-- Alternative Desktop switching to left/right END -->
