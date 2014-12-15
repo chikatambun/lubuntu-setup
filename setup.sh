@@ -4,6 +4,16 @@ cat <<EOF | sudo tee /usr/local/bin/gterm
 gnome-terminal --maximize
 EOF
 sudo chmod +x /usr/local/bin/gterm
+cat <<EOF | sudo tee /usr/local/bin/gterms
+#!/bin/bash
+gnome-terminal --geometry=80x20 --zoom=0.5
+EOF
+sudo chmod +x /usr/local/bin/gterms
+cat <<EOF | sudo tee /usr/local/bin/ggvim
+#!/bin/bash
+gnome-terminal --geometry=80x20 --zoom=0.5 -e vim
+EOF
+sudo chmod +x /usr/local/bin/ggvim
 
 # ref.
 #  http://kaiyanotako.blogspot.jp/2012/07/lubuntu-1204-mozc.html
