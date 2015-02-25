@@ -75,6 +75,26 @@ sed 's|<command>lxsession-default launcher_manager</command>|<command>lxpanelctl
 +         </finalactions>
 +       </action>
 +     </keybind>
++     <keybind key="W-j">
++       <action name="NextWindow">
++         <dialog>icons</dialog>
++         <finalactions>
++           <action name="Focus"/>
++           <action name="Raise"/>
++           <action name="Unshade"/>
++         </finalactions>
++       </action>
++     </keybind>
++     <keybind key="W-k">
++       <action name="PreviousWindow">
++         <dialog>icons</dialog>
++         <finalactions>
++           <action name="Focus"/>
++           <action name="Raise"/>
++           <action name="Unshade"/>
++         </finalactions>
++       </action>
++     </keybind>
     ...
     <keyboard>
     ...
