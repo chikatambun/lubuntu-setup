@@ -1,4 +1,4 @@
-# Disable IPv6
+## Disable IPv6
 echo net.ipv6.conf.all.disable_ipv6 = 1     | sudo tee /etc/sysctl.conf
 echo net.ipv6.conf.default.disable_ipv6 = 1 | sudo tee /etc/sysctl.conf
 echo net.ipv6.conf.lo.disable_ipv6 = 1      | sudo tee /etc/sysctl.conf
@@ -23,3 +23,15 @@ sudo sysctl -p
 #   Then run "sudo update-grub".
 #
 #   ref. https://bugs.launchpad.net/ubuntu/+source/linux/+bug/548992
+
+## Disable "wlan0"
+echo iface wlan0 inet manual | sudo tee -a /etc/network/interfaces
+sudo reboot
+
+# How to know the name of "wlan0": Run "ip a" command.
+#
+# In my case (HP Stream 11 d012tu), "wlan0" is the Realtek default (embedded)
+# wireless network device name, and "wlan1" is the USB wireless network device
+# name plugged by myself.
+#
+# ref. http://askubuntu.com/questions/168032/how-to-disable-built-in-wifi-and-use-only-usb-wifi-card
