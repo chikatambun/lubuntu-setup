@@ -1,20 +1,4 @@
-sudo aptitude install gnome-terminal
-mkdir -p $HOME/local/bin
-cat <<EOF | tee $HOME/local/bin/gterm > /dev/null
-#!/bin/bash
-gnome-terminal --maximize
-EOF
-chmod +x $HOME/local/bin/gterm
-cat <<EOF | tee $HOME/local/bin/gterms > /dev/null
-#!/bin/bash
-gnome-terminal --geometry=80x20 --zoom=0.5
-EOF
-chmod +x $HOME/local/bin/gterms
-cat <<EOF | tee $HOME/local/bin/ggvim > /dev/null
-#!/bin/bash
-gnome-terminal --geometry=80x20 --zoom=0.5 -e vim
-EOF
-chmod +x $HOME/local/bin/ggvim
+sudo aptitude install terminator
 
 # ref.
 #  http://kaiyanotako.blogspot.jp/2012/07/lubuntu-1204-mozc.html
