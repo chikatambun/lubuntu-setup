@@ -13,3 +13,6 @@ sudo aptitude install pavucontrol pulseaudio
 #   https://wiki.archlinux.org/index.php/Xcompmgr_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29
 sudo aptitude install xcompmgr
 echo xcompmgr >> $HOME/.config/lxsession/Lubuntu/autostart
+
+# ref. http://futurismo.biz/archives/2163
+sudo aptitude install rxvt-unicode-256color
