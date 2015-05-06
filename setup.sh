@@ -1,4 +1,4 @@
-sudo aptitude install terminator
+sudo aptitude install gnome-terminal terminator
 
 # ref.
 #  http://kaiyanotako.blogspot.jp/2012/07/lubuntu-1204-mozc.html
